@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const userID = "479877128368685056";
 
 client.on('ready', () => {
 
     console.log('I am ready!');
 
 });
-
-const userID = "479877128368685056"
 
 client.on("message", function(message){
 if(!message.sender === userID)
