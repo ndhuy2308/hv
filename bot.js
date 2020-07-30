@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 const userID = "479877128368685056"
 
-bot.on("message", function(message){
+client.on("message", function(message){
 if(!message.sender === userID)
 {
 
