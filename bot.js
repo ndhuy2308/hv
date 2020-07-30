@@ -8,13 +8,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-
+if(!message.sender === '479877128368685056')
+{
     if (message.content === 'ping') {
 
        message.reply('pong');
 
        }
-
+}
 });
 
 client.login(process.env.BOT_TOKEN);
