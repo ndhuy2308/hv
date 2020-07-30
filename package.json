@@ -1,10 +1,10 @@
 {
 
-  "name": "hv",
+  "name": "HV",
 
-  "description": "HV's bot",
+  "description": "HV",
 
-  "version": "0.0.0",
+  "version": "1.0.0",
 
   "main": "bot.js",
 
