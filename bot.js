@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 });
 
-client.on("message", function(message){
+client.on("message", (message) => {
 if(!message.sender === userID)
 {
 
