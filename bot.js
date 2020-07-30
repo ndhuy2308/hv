@@ -7,14 +7,14 @@ client.on('ready', () => {
 
 });
 
-let prefix = "";
-client.on("message", (message) => {
-  // Exit and stop if the prefix is not there or if user is a bot
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
- 
-  if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("pong");
-  } 
+client.on('message', message => {
+
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
 });
 
 client.login(process.env.BOT_TOKEN);
