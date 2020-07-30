@@ -10,15 +10,20 @@ client.on('ready', () => {
 
 });
 
-client.on('message',async message => {
+ 
 
-    if (message.content === 'pinktea') {
+client.on('message', message => {
 
-       message.reply('thich" nhun"');
+    if (message.content === 'ping') {
+
+       message.reply('pong');
 
        }
 
 });
 
+ 
+
+// THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
